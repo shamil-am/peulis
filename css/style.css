@@ -33,6 +33,9 @@ ul,ol{
 .pad0{
     padding:0;
 }
+.txt_ali_cen{
+    text-align: center;
+}
 /* HEADERTOP */
 header{
     background-color: #1EC8E7;
@@ -112,22 +115,99 @@ header .headerbottom .menu ul li ul{
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s;
-
 }
 header .headerbottom .menu ul li:hover ul{
     opacity: 1;
     visibility: visible;
     margin-top:36px;
 }
-
 /* search */
-header .headerbottom .search ul{
+header .headerbottom .search>ul{
     justify-content: flex-end;
     padding: 0px 20px;
+    margin: 0;
 }
-header .headerbottom .search ul li{
+header .headerbottom .search>ul>li{
     margin-left:20px;
+    padding: 35px 0px;
 }
+.search .shopingbag{
+    min-width: 260px;
+    position: absolute;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 60px;
+    left: 68%;
+    padding: 20px 20px 20px 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+header .headerbottom .search>ul>li:hover .shopingbag{
+    opacity: 1;
+    visibility: visible;
+    margin-top:36px;
+}
+.search .shopingbag .product,.total{
+    border-bottom: 1px solid #ddd;
+}
+.search .shopingbag .product .image{
+    width: 75px;
+}
+.search .shopingbag .image img{
+    max-width: 100%;
+}
+.search .shopingbag p{
+    color: #777;
+    font-size: 16px;
+}
+.search .shopingbag span{
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+}
+.search .shopingbag h5{
+    margin:0;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 600;
+}
+/* payment */
+.search .shopingbag .payment a{
+    display: inline-block;
+    margin-top: 10px;
+}
+.search .shopingbag .payment a:first-child{
+    background-color: #ff6d34;
+    margin-right: 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.search .shopingbag .payment a:first-child:hover{
+    background-color: #a54620;
+}
+.search .shopingbag .payment a:last-child{
+    background-color: #1EC8E7;
+    margin-left: 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.search .shopingbag .payment a:last-child:hover{
+    background-color: rgb(22, 113, 129);
+}
+.search .shopingbag .payment a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
 
 
 
