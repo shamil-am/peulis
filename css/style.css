@@ -81,17 +81,46 @@ header .headerbottom a{
 header .headerbottom a:hover{
     color:#ff6d34;  
 }
+/* logo */
 header .headerbottom .logo,.search{
     width: 25%;
-}
-header .headerbottom .menu{
-    width: 50%;
 }
 header .headerbottom .logo img{
     width: 75%;
     padding: 20px 20px;
 }
+/* menu */
+header .headerbottom .menu{
+    width: 50%;
+}
+header .headerbottom .menu ul{
+    margin:0;
+}
+header .headerbottom .menu>ul>li{
+    padding: 35px 0px;
+}
+header .headerbottom .menu ul li ul{
+    position: absolute;
+    z-index: 9;
+    margin-top: 60px;
+    margin-left: -10px;
+    padding: 10px 30px 10px 10px;
+    line-height: 3;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
 
+}
+header .headerbottom .menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    margin-top:36px;
+}
+
+/* search */
 header .headerbottom .search ul{
     justify-content: flex-end;
     padding: 0px 20px;
@@ -99,13 +128,6 @@ header .headerbottom .search ul{
 header .headerbottom .search ul li{
     margin-left:20px;
 }
-
-
-
-
-
-
-
 
 
 
