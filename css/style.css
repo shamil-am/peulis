@@ -281,11 +281,11 @@ main>.blogsidebar .homeblog .home:after{
     padding: 70px 0px;
 }
 .maincontent>.container .leftsection{
-    width: 70%;
+    width: 65%;
     padding: 0px 15px;
 }   
 .maincontent>.container .rightsection{
-    width: 30%;
+    width: 35%;
     padding: 0px 15px;
 }
 
@@ -397,7 +397,56 @@ main>.blogsidebar .homeblog .home:after{
     bottom: -15px;
     left: 18%;
 }
-
-
-
+/* categories */
+.rightsection .categories ul{
+    line-height: 3;
+}
+.rightsection .categories ul li{
+    padding-left: 20px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.rightsection .categories ul li::before{
+    content: "";
+    height: 3px;
+    width: 3px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.rightsection .categories ul li a{
+    color: #111;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+.rightsection .categories ul li a:hover{
+    color: #1EC8E7;
+}
+/* Tags */
+.rightsection .tags>ul{
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.rightsection .tags ul li{
+    margin: 0 5px 5px 0;
+}
+.rightsection .tags ul li a{
+    color: #000;
+    padding: 5px 15px;
+    font-size: 15px;
+    display: inline-block;
+    background-color: #f8f9fc;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+.rightsection .tags ul li a:hover{
+    background-color: #1EC8E7;
+    color: #fff;
+}
 
