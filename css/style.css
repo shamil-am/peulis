@@ -321,6 +321,10 @@ main>.blogsidebar .homeblog .home:after{
     color: #111; 
     font-size: 26px;
     font-weight: 700;
+    transition: all 0.4s;
+}
+.maincontent>.container .leftsection .postheader a:hover{
+    color: #ff6d34;
 }
 .maincontent>.container .leftsection .postheader p{
     color: #4d4e50;;
@@ -355,6 +359,44 @@ main>.blogsidebar .homeblog .home:after{
 
 
     /* RIGHT SECTION */
+.rightsection .searchbar input{
+    padding: 10px 20px;
+    text-align: initial;
+    border: 1px solid transparent;
+    border-radius: 5px 0px 0px 5px;
+    background-color: rgba(224, 219, 219, 0.753);
+}
+.rightsection .searchbar button{
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #1EC8E7 ;
+    color: #fff;
+}
+
+/* category */
+.categoryhead{
+    position: relative;
+}
+.categoryhead::before{
+    content: "";
+    height: 4px;
+    width: 15%;
+    background-color: #1EC8E7;
+    position: absolute;
+    left:0;
+    bottom:-15px;
+}
+.categoryhead::after{
+    content: "";
+    height: 4px;
+    width: 5%;
+    background-color: #ddd;
+    position: absolute;
+    bottom: -15px;
+    left: 18%;
+}
 
 
 
