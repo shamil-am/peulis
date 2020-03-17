@@ -4,6 +4,7 @@
 html,body{
     margin: 0px;
     padding: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 a{
     text-decoration: none;
@@ -16,7 +17,24 @@ ul,ol{
     margin: 0px auto 0px;
     position: relative;
 }
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
 
+} */
 /* SHORTCUT */
 .d_flex{
     display: flex;
@@ -32,6 +50,9 @@ ul,ol{
 }
 .pad0{
     padding:0;
+}
+.marg0{
+    margin:0;
 }
 .txt_ali_cen{
     text-align: center;
@@ -201,18 +222,50 @@ header .headerbottom .search>ul>li:hover .shopingbag{
     color: rgb(255, 255, 255);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-nav{
-    height:400px;
-    background-color: black;
+/* BLOG SIDEBAR */
+main .blogsidebar {
+    background-image: url(../img/sydney.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: color-burn;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+main .blogsidebar .container{
+    padding: 120px 0px;
+}
+main>.blogsidebar a{
+    color: #fff;
+}
+main>.blogsidebar h1 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 500;   
+}
+main>.blogsidebar .homeblog{
+    display:inline-block;
+    background-color: #1EC8E7;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+main>.blogsidebar .homeblog a{
+    margin: 10px;
+}
+main>.blogsidebar .homeblog .home{
+    position: relative;
+}
+main>.blogsidebar .homeblog .home:after{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4.5px 0 4.5px 6px;
+    border-color: transparent transparent transparent #ffffff;
+    position: absolute;
+    top: 8px;
+    right: -16px;
+    cursor: auto;
 }
