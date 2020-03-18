@@ -408,9 +408,8 @@ main>.blogsidebar .homeblog .home:after{
 }
 .rightsection .categories ul li::before{
     content: "";
-    height: 3px;
-    width: 3px;
-    border: 1px solid #000;
+    height: 4px;
+    width: 4px;
     border-radius: 50%;
     background-color: #000;
     position: absolute;
@@ -450,3 +449,84 @@ main>.blogsidebar .homeblog .home:after{
     color: #fff;
 }
 
+/* POPULAR POSTS */
+.popularpost ul{
+    padding: 10px 0 0 0;
+}
+.popularpost ul li{
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+}
+.popularpost ul li .instaimg{
+    width: 25%;
+    margin-right: 10px;
+}
+.popularpost ul li .instacontent{
+    width: 75%;
+}
+.popularpost ul li .instaimg img{
+    max-width: 100%;
+}
+.popularpost ul li .instacontent p{
+    margin:0;
+}
+.popularpost ul li .instacontent a{
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all .4s;
+}
+.popularpost ul li .instacontent a:hover{
+    color: #1EC8E7;
+}
+.popularpost ul li .instacontent p{
+    color: #4d4e50;
+    font-size: 15px;
+    margin-top: 5px;
+}
+/* ARCHIVE */
+.archive ul li{
+    padding-left: 20px;
+    line-height: 3;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.archive ul li:last-child{
+    border-bottom: none;
+}
+.archive ul li:before{
+    content: "";
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    left:0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.archive ul li a{
+    color: #111;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+.archive ul li a:hover{
+    color: #1EC8E7;
+}
+/* FROM ISNTAGRAM */
+.frominstagram ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0 0 0;
+}
+.frominstagram ul li{
+    width: 32.5%
+}
+.frominstagram ul li img{
+    max-width: 100%;
+}
+.frominstagram ul .middle{
+    margin: 0 1.25%;
+}
