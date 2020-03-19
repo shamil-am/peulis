@@ -530,3 +530,78 @@ main>.blogsidebar .homeblog .home:after{
 .frominstagram ul .middle{
     margin: 0 1.25%;
 }
+/* FOOTER */
+footer{
+    background-image: url(../img/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    background-color: rgba(0, 0, 0, 0.767);
+}
+footer .row{
+    display:flex;
+    padding: 70px 0;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.171);
+}
+footer .row .col{
+    width: 25%;
+}
+footer .row .col ul{
+    margin:0;
+    padding:0;
+}
+footer .logopeulis img{
+    max-width: 70%;
+    margin-top: 15px;
+}
+footer .footertop p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #92939c;
+    margin:0;
+}
+footer .footertop h5{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin:0 0 10px 0;
+}
+footer .footertop a{
+    font-size: 15px;
+    color: #92939c;
+    transition: all 0.4s;
+}
+footer .footertop a:hover{
+    color: #fff;
+}
+footer .footertop ul li{
+    margin: 5px 0px;
+}
+footer .footertop .logo{
+    padding: 0px 40px 0 0;
+}
+footer .footertop .pay{
+    padding: 0px 40px 0 0;
+}
+
+/* footerbottom */
+footer .footerbottom{
+    padding: 25px 0;
+}
+footer .footerbottom p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #92939c;
+    
+}
+footer .footerbottom a{
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;;
+    margin-left: 5px;
+}
+footer .footerbottom .social li{
+    margin-left: 10px;
+}
+
